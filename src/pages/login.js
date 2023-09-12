@@ -1,17 +1,14 @@
+// Login.js
 import React, { useState } from "react";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { app } from "../firebase";
-
-const auth = getAuth(app);
+import { useAuth } from "../AuthContext";
 
 const Login = () => {
+  const { login } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const createUser = () => {
-    createUserWithEmailAndPassword(auth, email, password).then((value) =>
-      alert("ok")
-    );
+  const handleLogin = () => {
+    login(email, password);
   };
 
   return (
@@ -28,7 +25,7 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
-      <button onClick={createUser}>Login</button>
+      <button onClick={handleLogin}>Login</button>
     </div>
   );
 };
