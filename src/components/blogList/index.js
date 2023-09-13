@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Typography, Grid, Stack, Divider } from "@mui/material";
 import Card from "../../components/card"
 import Categories from "../../components/Categories"
+import List from "../../components/list"
 // styled
 import RootStyled from "./styled";
 const blogsList = () => {
@@ -24,6 +25,7 @@ const blogsList = () => {
                         <Categories />
                     </Grid>
                 </Grid>
+                <List />
             </Container>
         </RootStyled>
     );
