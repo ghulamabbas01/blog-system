@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Blogs from "./pages/blogs";
 import Login from "./pages/login";
+import CreateBlog from "./pages/createBlog";
 import { AuthProvider } from "./AuthContext"; // Import the AuthProvider
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="Login" element={<Login />} />
+          <Route path="createBlog" element={<CreateBlog />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
