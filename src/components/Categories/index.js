@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Typography, Stack, Divider } from "@mui/material";
 import { Link } from "react-router-dom";
 const Categories = () => {
@@ -37,7 +37,8 @@ const Categories = () => {
             >
                 All Categories
             </Typography>
-            <Link to={""}
+            <Link
+                to={""}
                 style={{ textDecoration: "none" }}
                 variant="body1"
                 fontSize={14}
@@ -46,58 +47,78 @@ const Categories = () => {
             >
                 Interviews
             </Link>
-            <Typography
+            <Link
+                to={""}
+                style={{ textDecoration: "none" }}
                 variant="body1"
                 fontSize={14}
                 fontWeight={400}
                 color={"#000"}
             >
                 Podcast
-            </Typography> <Typography
+            </Link>
+            <Link
+                to={""}
+                style={{ textDecoration: "none" }}
                 variant="body1"
                 fontSize={14}
                 fontWeight={400}
                 color={"#000"}
             >
                 Inspiration
-            </Typography> <Typography
+            </Link>
+            <Link
+                to={""}
+                style={{ textDecoration: "none" }}
                 variant="body1"
                 fontSize={14}
                 fontWeight={400}
                 color={"#000"}
             >
                 Process
-            </Typography> <Typography
+            </Link>
+            <Link
+                to={""}
+                style={{ textDecoration: "none" }}
                 variant="body1"
                 fontSize={14}
                 fontWeight={400}
                 color={"#000"}
             >
                 Meetups
-            </Typography> <Typography
+            </Link>
+            <Link
+                to={""}
+                style={{ textDecoration: "none" }}
                 variant="body1"
                 fontSize={14}
                 fontWeight={400}
                 color={"#000"}
             >
                 Updates
-            </Typography> <Typography
+            </Link>{" "}
+            <Link
+                to={""}
+                style={{ textDecoration: "none" }}
                 variant="body1"
                 fontSize={14}
                 fontWeight={400}
                 color={"#000"}
             >
                 Hang Time
-            </Typography> <Typography
+            </Link>{" "}
+            <Link
+                to={""}
+                style={{ textDecoration: "none" }}
                 variant="body1"
                 fontSize={14}
                 fontWeight={400}
                 color={"#000"}
             >
                 Community
-            </Typography>
+            </Link>
         </Stack>
-    )
-}
+    );
+};
 
-export default Categories
+export default Categories;
