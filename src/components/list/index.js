@@ -6,9 +6,9 @@ const list = () => {
     return (
         <Grid container>
             {listData.map((value) => (
-                <Grid item md={8} key={value.id}>
+                <Grid item md={8} xs={12} key={value.id}>
                     <Divider />
-                    <Stack direction="row" spacing={4} display="flex" alignItems="center">
+                    <Stack direction={{ md: "row", xs: "column" }} spacing={4} display="flex" alignItems={{ md: "center", xs: "left" }}>
                         <img src={value.image} alt="img1" width={200} height={150} />
                         <Stack spacing={1}>
                             <Typography
