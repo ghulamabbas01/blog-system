@@ -13,11 +13,13 @@ import "react-markdown-editor-lite/lib/index.css";
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 // Finish!
-function handleEditorChange({ html, text }) {
-  console.log("handleEditorChange", html, text);
-}
 
-const markdown = () => {
+const markdown = ({ handleChange }) => {
+  const handleEditorChange = ({ html }) => {
+    console.log("handleEditorChange", html);
+    handleChange(html);
+  };
+
   return (
     <div>
       <MdEditor
@@ -30,3 +32,4 @@ const markdown = () => {
 };
 
 export default markdown;
+
